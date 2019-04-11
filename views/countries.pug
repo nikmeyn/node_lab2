@@ -1,0 +1,11 @@
+extends travel.pug
+    
+block content
+    h2 Countries with Photos
+    div
+        ul.photos
+            each country in countryData
+                li 
+                    a(href=`/travel/photos/${country._id.countryName}`) #{country._id.countryName} [#{country.count}]
+
+            

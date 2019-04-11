@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+    article.book
+        div
+            img(src=`/book-images/${bookData.isbn10}.jpg`)
+        div
+            h1= bookData.title
+            p
+                | Year:
+                span= bookData.year
+            p
+                | Publisher:
+                span= bookData.publisher
+            p
+                | Pages:
+                span= bookData.production.pages
+            p Categories: #{bookData.category.main}, #{bookData.category.secondary}

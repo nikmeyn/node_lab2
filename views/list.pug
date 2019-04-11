@@ -1,0 +1,11 @@
+extends layout.pug
+    
+block content
+    h1 List of Books
+    div.booklist
+        each book in bookData
+            div
+                a(href=`/site/book/${book.isbn10}`)
+                    img(src=`/book-images/${book.isbn10}.jpg` width='100')
+            div
+                h3= book.title

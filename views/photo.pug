@@ -1,0 +1,14 @@
+extends travel.pug
+
+block content
+    article.photo
+        div
+            img(src=`/travel-images/${photoData.filename}`)
+        
+            h2= photoData.title
+
+            h3 #{photoData.location.city}, #{photoData.location.country}
+            
+            h1 #{photoData.user.firstname} #{photoData.user.lastname} 
+            
+            p= photoData.description

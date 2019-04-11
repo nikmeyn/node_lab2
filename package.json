@@ -1,0 +1,17 @@
+{
+  "name": "node_2",
+  "version": "1.0.0",
+  "description": "node 2 lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "pug": "^2.0.3"
+  }
+}

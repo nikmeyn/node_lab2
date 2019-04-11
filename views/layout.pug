@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Node 2 Lab
+        link(rel='stylesheet', href='/styles.css')
+    body
+        header
+            h2 Book Site
+        main.book
+            section.sidebar
+                nav
+                    ul
+                        li
+                            a(href='/') Home
+                        li
+                            a(href='/site/list') List
+                        li 
+                            a(href='/travel') About/Travel
+                        li Contact Us
+            section.pagecontent
+                block content
+        footer
+            p &copy 2020

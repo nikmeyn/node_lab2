@@ -1,0 +1,7 @@
+extends travel.pug
+    
+block content
+    div.photolist
+        each image in countryData
+            a(href=`/travel/photo/${image.id}`)
+                img(src=`/travel-images/${image.toObject().filename}` width='100')
